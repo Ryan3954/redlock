@@ -1,7 +1,7 @@
 FROM php:8.1-apache
 
 #Copying index.php to /var/www/html
-COPY index.php /var/www/html
+COPY . /var/www/html
 
 #installing and enabling mysqli extension for php within docker container
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
