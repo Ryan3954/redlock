@@ -11,3 +11,4 @@ RUN chown -R www-data:www-data /var/www/html
 
 #removing write and execute permission for others in index.php
 RUN chmod o-wx /var/www/html/index.php
+RUN chmod o-wx /var/www/html/total.php
